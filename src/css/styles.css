@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,50 +10,69 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+li:not(:last-child) {
+  margin-bottom: 30px;
+}
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
+  width: 250px;
   margin-bottom: 16px;
+  border: 1px solid #585858;
+  border-radius: 5px;
 }
-
 .country-list {
+  margin: 0;
   padding: 0;
-  list-style: none;
-  margin: 0;
+  max-width: 500px;
 }
-
-.country-list li {
+.country-list__div {
   display: flex;
   align-items: center;
-  margin: 5px 0;
-  font-size: 1.5rem;
+  padding: 3px;
+  margin-bottom: 20px;
 }
-
-.country-list img {
-  margin-right: 10px;
-  width: 2rem;
+.country-list__flag {
+  width: 100%;
   height: auto;
+  max-width: 50px;
 }
-
-.country-info h1 {
-  display: flex;
-  align-items: center;
-  margin: 0;
+.country-list__flag--card {
+  max-width: 75px;
 }
-
-.country-info p {
-  margin: 1rem 0;
-}
-
-.country-info img {
+.country-list__flag img {
   display: block;
-  margin-right: 10px;
-  width: 2rem;
-  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.country-list__name {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0 0 0 10px;
+}
+.country-list__name--card {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1;
 }
 
-.country-info span {
+.country-card__capital,
+.country-card__population,
+.country-card__languages {
+  font-size: 24px;
   font-weight: 400;
+}
+.country-card__info {
+  font-weight: bold;
 }

@@ -1,10 +1,10 @@
-<h1>
-  <img src='{{flags.svg}}' height=10px />
-  <p>{{name.official}}</p>
-</h1>
-<h3>Capital: <span>{{capital}}</span></h3>
-<h3>Population: <span>{{population}}</span></h3>
-<h3>Languages: {{#each languages}}
-  <span>{{this}}.</span>
-  {{/each}}
-</h3>
+<ul>
+  <li><p class='country-card__capital'><span class="country-card__info">Capital:</span> {{capital}}.</p></li>
+  <li><p class='country-card__population'><span class="country-card__info">Population:</span> {{population}}.</p></li>
+  <li><p class='country-card__languages'><span class="country-card__info">Languages:</span> {{#each languages}}
+    <span>{{this}}.</span>
+    {{/each}}
+  </p></li>
+</ul>
+
+
